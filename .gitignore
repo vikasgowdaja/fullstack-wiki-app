@@ -1,0 +1,57 @@
+# Deployment Wiki - Git Ignore
+
+# Never commit sensitive files
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+id_rsa
+id_rsa.pub
+authorized_keys
+*.p12
+*.pfx
+
+# Backups and logs
+*.log
+*.backup
+*.bak
+/backups/
+/logs/
+*.tar.gz
+*.zip
+
+# System and IDE files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cache/
+
+# Node modules (if any code in wiki)
+node_modules/
+
+# Temporary files
+*.tmp
+/tmp/
+/temp/
+
+# Sensitive scripts
+scripts/private/
+scripts/*.key
+
+# Database dumps (if stored locally)
+*.sql
+*.dump
+*.mongodb
+
+# Keep documentation
+!*.md
+!*.yml
+!*.yaml
+
+# Specific exceptions
+!.env.example
+!.env.template
