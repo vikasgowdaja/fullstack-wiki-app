@@ -30,6 +30,6 @@
     "simple-git": "^3.16.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^3.1.14"
   }
 }
